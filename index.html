@@ -2,62 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rudra Kalyan</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudra Kalyan | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Rudra Kalyan</h1>
-      <p><a href="mailto:rudrakalyan1144@gmail.com">rudrakalyan1144@gmail.com</a> | +91 9652590645</p>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+    </ul>
+  </nav>
 
-    <section>
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>B.Tech in ECE</strong> – NIT Warangal | CGPA: 7.62</li>
-        <li><strong>Minor in ACM</strong> – NIT Warangal | CGPA: 7.15</li>
-      </ul>
-    </section>
+  <section class="home">
+    <img src="Screenshot from 2025-05-23 18-55-15.png" alt="Rudra Kalyan">
+    <h1>Rudra Kalyan</h1>
+    <p><a href="mailto:rudrakalyan1144@gmail.com">rudrakalyan1144@gmail.com</a> | +91 9652590645</p>
+  </section>
 
-    <section>
-      <h2>💼 Experience</h2>
-      <ul>
-        <li><strong>Wells Fargo (May–July 2024):</strong> Automated fraud detection, reduced verification from 1 day to 5 mins.</li>
-        <li><strong>Research Intern:</strong> Published paper on Low Light Enhancement using CNN under Prof. J Ravi Kumar.</li>
-      </ul>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>National Institute of Technology Warangal (NITW)</strong> - B.Tech in Electronics and Communication Engineering (Dec 2021 - Present)<br>
+    CGPA: 7.62<br>
+    Relevant Courses: Data Structures, Introduction to Artificial Intelligence, Python Programming, Probability Theory and Stochastic Processes.</p>
 
-    <section>
-      <h2>🛠️ Skills</h2>
-      <p>Python, C++, PyTorch, TensorFlow, Vivado, MATLAB, Arduino</p>
-    </section>
+    <p><strong>National Institute of Technology Warangal (NITW)</strong> - Minor Degree in Applied and Computational Mathematics (Aug 2022 - Present)<br>
+    CGPA: 7.15<br>
+    Relevant Courses: Mathematical Foundations for Machine Learning, Statistics for Data Science, Search Methods in AI.</p>
+  </section>
 
-    <section>
-      <h2>📂 Projects</h2>
-      <ul>
-        <li><strong>Fashion Chatbot:</strong> Built using LLaMA, fine-tuned for outfit recommendations.</li>
-        <li><strong>Dijkstra on FPGA:</strong> Hardware pathfinding on NITW map using custom 5-bit encoding.</li>
-      </ul>
-    </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Wells Fargo (May 2024 – July 2024)</strong><br>
+    Developed the ACFTD system with a team of 5+ engineers and interns, reducing manual effort.<br>
+    Automated the verification process, reducing transaction review time from 1 day (6000 transactions by 20 members) to less than 5 Minutes.<br>
+    Provided confidence scores and explainability for flagged fraud transactions.</p>
 
-    <section>
-      <h2>🏆 Achievements</h2>
-      <p>IEEE Paper: 14-layer CNN for low light image enhancement — cited 5+ times.</p>
-    </section>
+    <p><strong>Research Intern (Dec 2022 – March 2023)</strong><br>
+    Worked under Prof. J Ravi Kumar sir on Low Light Image Enhancement Using CNN project and published a research paper.</p>
+  </section>
 
-    <section>
-      <h2>🧠 Leadership</h2>
-      <p>President, BDACC NITW: Led 4+ major ML events with 100+ participants.</p>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Machine Learning: TensorFlow, PyTorch</li>
+      <li>Programming Languages: C++ (Data Structures), Python</li>
+      <li>Tools: Arduino IDE, MATLAB, XILINX VIVADO, LTSpice</li>
+    </ul>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Rudra Kalyan</p>
-    </footer>
-  </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><strong>Built a chatbot using Llama</strong><br>
+    Developed a chatbot that recommends outfits based on skin tone, eye color, and occasion by fine-tuning unsloath and Llama models on curated fashion datasets.<br>
+    Deployed the chatbot on Hugging Face, enabling seamless and interactive user experiences.</p>
+
+    <p><strong>Implemented Dijkstra Algorithm on FPGA</strong><br>
+    Implemented Dijkstra’s algorithm on FPGA for the NITW map using a custom 5-bit encoding for efficient location representation and shortest path computation.<br>
+    Deployed the design on a Nexus 4 DDR FPGA platform, enhancing real-time performance and reliability through optimized hardware-based pathfinding.</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <p><strong>Published a Research Paper - IEEE Bangalore</strong> (March 2023)<br>
+    Published A Research Paper titled “A NEW CONCATENATED MENTHOD FOR DEEP CURVE ESTIMATION USING LOW WEIGHT CNN FOR LOW LIGHT IMAGE ENHANCEMENT” at IEEE 2ND INOCON.<br>
+    The paper uses 14 Convolution layers to produce 24 Curve parameters for 8 Iterations. The image intensity is increased using a Quadratic equation. Each RGB channel is processed separately, and the results are combined to get the final enhanced image.</p>
+
+    <p><strong>President - BDACC, NIT Warangal</strong><br>
+    Led BDACC for the 2024-2025 academic year, fostering a strong ML community at NIT Warangal.<br>
+    Organized 4+ events (Build a Bot, Kaggle competitions, PyTorch workshops, case study contests) with 100+ participants each to promote hands-on learning.</p>
+  </section>
 </body>
 </html>
-
-
